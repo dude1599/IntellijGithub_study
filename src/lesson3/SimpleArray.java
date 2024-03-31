@@ -26,6 +26,6 @@ public class SimpleArray {
      * (index x 7 / 5) ^ 2
      */
     private static void fillArray(int index) {
-        arrays[index] = (index * 7 / 5) * (index * 7 / 5);
+        arrays[index] = (index * 7 / 5) * (index * 7 / 5);  // index가 정수이므로 괄호 안의 식이 계산되면서 정수로 변환된다.
     }
 }
