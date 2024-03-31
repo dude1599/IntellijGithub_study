@@ -67,17 +67,17 @@ public class SnakeGameWithoutTales {
                 break;
         }
 
-        // 위치가 보드 범위를 벗어나는지 확인
+        // 위치가 보드 범위를 벗어나는지 확인하는 조건문
         if (location.getX() < 0)
-            location = location.adjust(1, 0); // 왼쪽 벽으로 통과
+            location = location.adjust(1, 0); 
         else if (location.getX() >= BOARD_SIZE)
-            location = location.adjust(-1, 0); // 오른쪽 벽으로 통과
+            location = location.adjust(-1, 0); 
         else if (location.getY() < 0)
-            location = location.adjust(0, 1); // 위쪽 벽으로 통과
+            location = location.adjust(0, 1);
         else if (location.getY() >= BOARD_SIZE)
-            location = location.adjust(0, -1); // 아래쪽 벽으로 통과
+            location = location.adjust(0, -1); 
 
-        // 아이템을 먹었는지 확인
+        // 아이템을 먹었는지 확인 후 점수 up & 아이템 제거 후 다시 보드판 출력
         if (board[location.getX()][location.getY()] == 2) {
             score++; // 점수 증가
             board[location.getX()][location.getY()] = 0; // 아이템 제거
