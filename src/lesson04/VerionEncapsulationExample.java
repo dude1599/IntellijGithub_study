@@ -50,7 +50,6 @@ public class VerionEncapsulationExample {
             return type;
         }
     }
-
     // TestV2 클래스는 입력된 문자열에서 느낌표(!)를 물음표(?)로 바꿔야 합니다.
     // Split by space
     static class TestV2 implements TestInterface {
